@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>界面样式</title>
+    <style>
+      input {
+        /*  取消轮廓线*/
+        outline: none;
+      }
+      textarea {
+        /* 文本域 防止拖拽 */
+        resize: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 界面样式:用户操作样式(提高用户体验) -->
+    <!-- 1.更改用户鼠标样式 -->
+    <ul>
+      <li style="cursor: default;">默认小白样式</li>
+      <li style="cursor: pointer;">小手样式</li>
+      <li style="cursor: move;">移动</li>
+      <li style="cursor: text;">文本</li>
+      <li style="cursor: not-allowed;">禁止</li>
+    </ul>
+    <!-- 2.表单轮廓 -->
+    <!-- 取消表单轮廓 -->
+    <input type="text" />
+    <!-- 3.防止表单拖拽 -->
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <!--  -->
+  </body>
+</html>

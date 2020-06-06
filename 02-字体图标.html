@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>字体图标</title>
+    <style>
+      /* 字体声明 */
+      @font-face {
+        font-family: 'icomoon';
+        src: url('fonts/icomoon.eot?p8v4wf');
+        src: url('fonts/icomoon.eot?p8v4wf#iefix') format('embedded-opentype'),
+          url('fonts/icomoon.ttf?p8v4wf') format('truetype'),
+          url('fonts/icomoon.woff?p8v4wf') format('woff'),
+          url('fonts/icomoon.svg?p8v4wf#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        font-display: block;
+      }
+      span {
+        /* 使用指定字体 */
+        font-family: 'icomoon';
+        font-size: 40px;
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 精灵图缺点 -->
+    <!-- 1.图片文件较大 2.图片本身会放大或缩小 3.图片替换麻烦 -->
+    <!-- 字体图标使用场景:主要用于显示网页中通用 常用的一些小图标-->
+    <!-- 字体图标展示的是图标,本质是字体 -->
+    <!-- 字体图标的优点:
+      1.轻量级:一个图标字体要比一系列图像要小,一旦字体加载,图标马上渲染了,减少服务器请求
+      2.灵活性:本质是文字,可以设置颜色阴影透明等
+      3.兼容性:几乎支持所有浏览器
+
+     -->
+    <!-- 使用:1字体图标下载
+              2引入 : 
+              3追加:重新上传select.json
+       -->
+    <!-- 复制小方框 -->
+    <span>
+      
+    </span>
+  </body>
+</html>

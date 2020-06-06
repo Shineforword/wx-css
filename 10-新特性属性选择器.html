@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>属性选择器</title>
+    <style>
+      /* 必须是input 同时具有value属性 */
+      input[value]::placeholder {
+        color: pink;
+      }
+      /* 选择属性值等于text的  */
+      input[type='text'] {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      CSS3的现状
+      1.新增的特性有兼容性问题,IE9+才支持
+      2.移动端支持由于PC
+      3.不断改进中
+      4.应用相对广泛
+      5.现阶段主要学习:新增选择器和盒子模型以及其他特性
+     -->
+
+    <!-- 属性选择器可以根据元素的特定属性来选择元素,这样就可以不用借助于类或者id选择器 -->
+    <!-- 选择符
+      E
+     -->
+    <!-- 1.利用属性选择器就可以不用借助类或者id选择器 -->
+    <!-- <input type="text" value="" placeholder="请输入用户名" /> -->
+    <!-- <input type="text" placeholder="请输入用户名" /> -->
+    <!-- 2.属性选择器还可以选择属性=值的某些元素(重点务必掌握) -->
+    <input type="text" name="" id="" />
+    <input type="password" name="" id="" />
+    <!-- 3.属性选择器可以选择属性值开头的某些元素 -->
+    元素[属性^='值']
+    <!-- 4.属性选择器可以选择属性值结尾的某些元素 -->
+    元素[属性$='值']
+    <!-- 5.属性选择器可以选择属性值含有的某些元素 -->
+    元素[属性*='值']
+
+    <!-- 注意:类选择器 属性选择器 伪类选择器  权重都是0010 -->
+  </body>
+</html>

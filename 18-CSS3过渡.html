@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>过渡</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        /* 属性 花费时间 运动曲线 何时开始(多属性可以逗号分割)*/
+        transition: all 0.5s;
+      }
+      div:hover {
+        width: 500px;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 过渡(transition)是CSS3中具有颠覆性的特征之一,我们可以在不使用flash动画或JS的情况下,当元素 -->
+    <!-- 从一种样式变换为另一种样式时为元素添加效果 -->
+    <!-- 过渡动画:是从一个状态 渐渐的过渡到另外一个状态 -->
+    <!-- 可以让我们页面更好砍,更动感十足,虽然低版本浏览器不支持但是不会影响界面布局 -->
+    <!-- 我们现在经常和:hover搭配使用 -->
+
+    <!-- 1属性:想要变化CSS属性,高度宽度 背景颜色 内外边距等都可以.如果想要所有的属性都变化过渡下一个all就可以 -->
+    <!-- 2.花费时间:单位是秒(必须写单位)  比如0.5s -->
+    <!-- 3.运动曲线:默认是ease 可以省略 -->
+    <!-- 4.何时开始:单位是秒(必须写单位) 可以设置延迟触发时间  默认是0s -->
+
+    <div></div>
+  </body>
+</html>

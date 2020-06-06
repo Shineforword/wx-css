@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>空白缝隙</title>
+    <style>
+      div {
+        border: 2px solid red;
+      }
+      /* 推荐方式 */
+      div img {
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 产生原因:行内块元素与文字基线对齐 -->
+    <!-- 解决方法 -->
+    <!-- 方法1.给图片添加vertical-align:middle|top|bottom等(推荐) -->
+    <!-- 方法2.将图片转化为块级元素 -->
+    <div>
+      <img
+        src="http://game.gtimg.cn/images/yxzj/web201706/images/comm/index.png"
+        alt=""
+      />
+    </div>
+  </body>
+</html>

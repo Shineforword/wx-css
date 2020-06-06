@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>精灵图</title>
+    <style>
+      .box1 {
+        width: 60px;
+        height: 60px;
+        margin: 100px auto;
+        /* 图片*/
+        background: url(http://game.gtimg.cn/images/yxzj/web201706/images/comm/index.png)
+          no-repeat;
+        /* 位置*/
+        background-position: -182px 0;
+      }
+      .box2 {
+        width: 27px;
+        height: 25px;
+        margin: 200px auto;
+        /* 图片*/
+        background: url(http://game.gtimg.cn/images/yxzj/web201706/images/comm/index.png)
+          no-repeat;
+        /* 位置*/
+        background-position: -155px -106px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 一个网页中往往会应用很多很小的背景图片作为修饰,当网页中的图像过多的时,服务器就会频繁的接受和发送
+      请求图片,造成服务器的请求压力过大,这将大大的降低页面的加载速度
+      因此 为了有效的减少服务器接收和发送请求的次数,提高页面的加载速度,出现了CSS精灵拘束
+      核心:将网页中的一些小背景图像整合到一张大图中,这样服务器只需要请求一次就可以了
+     -->
+    <!-- 使用精灵图 -->
+    <!-- 1.主要针对背景图片 -->
+    <!-- 2.移动背景图片位置 backgroud-position (x y) -->
+    <!-- 注意网页坐标 -->
+    <!-- 使用精灵图时定位精确 -->
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+  </body>
+</html>

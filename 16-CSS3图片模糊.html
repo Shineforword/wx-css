@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>图片模糊</title>
+    <style>
+      img {
+        /* 注意数字加单位 */
+        filter: blur(10px);
+      }
+      img:hover {
+        filter: blur(0px);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- filter CSS属性将模糊或者颜色偏移等图形效果应用于元素 -->
+    <!-- filter:函数();例如:filter:blur(5px); 模糊处理  数值越大越模糊 -->
+    <img
+      src="https://aecpm.alicdn.com/simba/img/TB1JNHwKFXXXXafXVXXSutbFXXX.jpg"
+      alt=""
+    />
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>结构伪类选择器</title>
+    <style>
+      /* 选择ul里边的第一个孩子 */
+      ul li:first-child {
+        background-color: pink;
+      }
+      /* 最后一个 */
+      ul li:last-child {
+        background-color: red;
+      }
+      /* n某一个 n可以是数字 公式等 */
+      ul li:nth-child(3) {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 结构伪类选择器主要根据文档结构来选择元素,常用于根据父级选择器里面的子元素-->
+
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+    </ul>
+  </body>
+</html>
